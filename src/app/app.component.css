@@ -1,0 +1,26 @@
+#title {
+  color: black;
+  font-family: StrawberryWhippedCream;
+  font-size: 100px;
+  margin-top: 5px;
+  margin-bottom: -15px;
+}
+
+#title_date {
+  color: black;
+  font-family: StrawberryWhippedCream;
+  font-size: 55px;
+}
+
+#imgBG {
+  display: block;
+  margin: 0 auto;
+}
+
+#tab-bar {
+  margin-bottom: -20px;
+}
+
+#map {
+  margin-top: 15px;
+}

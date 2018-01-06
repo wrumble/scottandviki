@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face { font-family: "ArchisticoBold"; src: url("./assets/fonts/ArchisticoBold.ttf"); }
+@font-face { font-family: "ArchisticoSimple"; src: url("./assets/fonts/ArchisticoSimple.ttf"); }
+@font-face { font-family: "StrawberryWhippedCream"; src: url("./assets/fonts/StrawberryWhippedCream.ttf"); }
+
+html {
+    background-color: #76cbae;
+}

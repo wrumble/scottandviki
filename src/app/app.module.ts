@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { MaterializeModule } from "angular2-materialize";
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToolbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterializeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

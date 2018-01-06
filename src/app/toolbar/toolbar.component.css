@@ -1,0 +1,44 @@
+#nav {
+  color: black;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#dropdown {
+  color: black;
+  background-color: #FF814E;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#dropdownText {
+  color: black;
+}
+
+#horizontalText {
+  color: black;
+}
+
+#side-nav-button {
+  color: black;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#menuIcon {
+  color: black;
+}
+
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    float: none;
+}
+nav ul li a {
+    display: inline-block;
+}
