@@ -1,8 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-@font-face { font-family: "ArchisticoBold"; src: url("./assets/fonts/ArchisticoBold.ttf"); }
-@font-face { font-family: "ArchisticoSimple"; src: url("./assets/fonts/ArchisticoSimple.ttf"); }
-@font-face { font-family: "StrawberryWhippedCream"; src: url("./assets/fonts/StrawberryWhippedCream.ttf"); }
+@font-face {
+  font-family: "StrawberryWhippedCream";
+  src: url("./assets/fonts/StrawberryWhippedCream.ttf");
+}
+@font-face {
+  font-family: "CallingAngels";
+  src: url("./assets/fonts/CallingAngels.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./assets/fonts/OpenSans-Regular.ttf");
+}
 
 html {
-    background-color: #76cbae;
+    background-color: #DBD1E3;
 }

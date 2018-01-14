@@ -1,35 +1,44 @@
-<div class="show-on-medium-and-down hide-on-large-only">
-  <a class='dropdown-button btn' href='#' data-activates='dropdown'><i class="left transparent material-icons">menu</i></a>
-  <ul id='dropdown' class='dropdown-content'>
-    <li><a href="#!">Agenda</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Directions</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Map</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">R.S.V.P</a></li>
-  </ul>
-</div>
-
-<div style="text-align:center">
-  <h1 id="title">Scott & Viki</h1>
-  <h2 id="title_date">23/06/17</h2>
-</div>
-<div id="tab-bar" class="container center">
-  <div class="row show-on-large hide-on-med-and-down">
-    <div class="col s12">
-      <ul class="tabs transparent">
-        <li class="tab col s3"><a class="black-text" href="#">Agenda</a></li>
-        <li class="tab col s3"><a class="black-text" href="#">Directions</a></li>
-        <li class="tab col s3"><a class="black-text" href="#map">Map</a></li>
-        <li class="tab col s3"><a class="black-text" href="#">R.S.V.P</a></li>
+<!DOCTYPE html>
+<html>
+  <body id="body">
+  <nav class="nav-center">
+    <div id="nav-wrapper" class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+        <img src="./assets/logo.png">
+      </a>
+      <a id="mobile-menu" href="#" materialize="sideNav" data-activates="mobile" data-beloworigin="true" onclick="Materialize.showStaggeredList('#mobile')" class="hide-on-med-and-up dropdown-button btn white-text transparent">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="hide-on-med-and-down" style="text">
+        <li><a class="white-text" href="#">Agenda</a></li>
+        <li><a class="white-text" href="#">Directions</a></li>
+        <li><a class="white-text" href="#map">Map</a></li>
+        <li>
+          <a class="white-text" href="mailto:victorialouisewalton7@gmail.com?cc=scottrumble1@gmail.com&subject=Wedding%20R.S.V.P">R.S.V.P
+          </a>
+        </li>
+      </ul>
+      <ul class="dropdown-content" id="mobile">
+        <li><a class="left black-text" href="#">Agenda</a></li>
+        <li><a class="left black-text" href="#">Directions</a></li>
+        <li><a class="left black-text" href="#map">Map</a></li>
       </ul>
     </div>
-  </div>
-</div>
+  </nav>
 
-<img id="imgBG" src="./assets/SVSunset.jpg">
+    <div id="img-div" class="hide-on-med-and-down">
+      <img id="img" src="./assets/SVSunset.jpg">
+      <h1 id="title">Scott and Viki</h1>
+      <h2 id="title-date">23/06/17</h2>
+    </div>
 
-<div id="map" class="container center">
-  <iframe width="600" height="450" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB-LQksd5xtrnYJgS-2CTvYdj3YK-ss-34&q=Blackboys+Inn+Sussex&zoom=14" allowfullscreen></iframe>
-</div>
+    <div id="mobile-text" class="hide-on-med-and-up">
+      <h1 id="mobile-title">Scott and Viki</h1>
+      <h2 id="mobile-title-date">23/06/17</h2>
+    </div>
+
+    <div id="map-div" class="container center">
+      <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
