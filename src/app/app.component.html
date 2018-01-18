@@ -3,118 +3,141 @@
   <body id="body">
     <div id="main-container" class="container">
       <div class="row">
-        
+        <div class="container center">
+          <p id="title-text">Scott and Viki</p>
+          <p id="date-text">23/06/18</p>
+        </div>
+      </div>
       <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
+        <div class="col s12 m6 l4">
+          <a href="#" onclick="$('#agenda-modal').modal('open');">
+            <div class="card">
             <div class="card-image">
               <img src="./assets/SVSunset.jpg">
               <span class="card-title">Agenda</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <p>Whats happening when and where</p>
             </div>
           </div>
+          </a>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
+        <!-- Map Card -->
+        <div class="col s12 m6 l4">
+          <a href="#" onclick="$('#map-modal').modal('open');">
+            <div class="card">
             <div class="card-image">
               <img src="./assets/SVSunset.jpg">
               <span class="card-title">Map</span>
             </div>
-            <div class="card-content">
-              <p>Map with markers for church, reception etc</p>
-            </div>
           </div>
+          </a>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
+        <!-- Confetti Card -->
+        <div class="col s12 m6 l4">
+          <a href="#" onclick="$('#confetti-modal').modal('open');">
+            <div class="card">
             <div class="card-image">
               <img src="./assets/SVSunset.jpg">
               <span class="card-title">Confetti</span>
             </div>
-            <div class="card-content">
-              <p>DIY some eco friendly confetti :)</p>
-            </div>
           </div>
+          </a>
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
+        <!-- Hotels & Taxi's Card -->
+        <div class="col s12 m6 l4">
+          <a href="#" onclick="$('#hotel-modal').modal('open');">
+            <div class="card">
             <div class="card-image">
               <img src="./assets/SVSunset.jpg">
               <span class="card-title">Hotels & Taxi's</span>
             </div>
-            <div class="card-content">
-              <p>A list nearby hotels and taxi ranks</p>
-            </div>
           </div>
+          </a>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
+        <!-- Children Card -->
+        <div class="col s12 m6 l4">
+          <a href="#" onclick="$('#children-modal').modal('open');">
+            <div class="card">
             <div class="card-image">
               <img src="./assets/SVSunset.jpg">
               <span class="card-title">Children</span>
             </div>
-            <div class="card-content">
-              <p>What to do with your god damn kids</p>
-            </div>
           </div>
+          </a>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
+        <!-- Camping Card -->
+        <div class="col s12 m6 l4">
+          <a href="#" onclick="$('#camping-modal').modal('open');">
+            <div class="card">
             <div class="card-image">
               <img src="./assets/SVSunset.jpg">
               <span class="card-title">Camping</span>
             </div>
-            <div class="card-content">
-              <p>Fancy camping?</p>
-            </div>
           </div>
+          </a>
         </div>
       </div>
     </div>
+    <!-- Agenda Modal -->
+    <div id="agenda-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+      <div class="modal-content">
+        <h4>Agenda For The Day</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      </div>
+    </div>
+    <!-- Map Modal -->
+    <div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+      <div class="modal-content">
+        <h4>Map of the area and directions</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      </div>
+    </div>
+    <!-- Confetti Modal -->
+    <div id="confetti-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+      <div class="modal-content">
+        <h4>DIY some eco friendly confetti</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      </div>
+    </div>
+    <!-- Hotel Modal -->
+    <div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+      <div class="modal-content">
+        <h4>A List of nearby Hotels and Taxi Rank Numbers</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      </div>
+    </div>
+    <!-- Children Modal -->
+    <div id="children-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+      <div class="modal-content">
+        <h4>What to do with your god damn kids</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      </div>
+    </div>
+    <!-- Camping Modal -->
+    <div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+      <div class="modal-content">
+        <h4>Fancy Camping in the farm?</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      </div>
+    </div>
+
   </body>
-  <!-- <nav class="nav-center">
-    <div id="nav-wrapper" class="nav-wrapper">
-      <a href="#!" class="brand-logo">
-        <img src="./assets/logo.png">
-      </a>
-      <a id="mobile-menu" href="#" materialize="sideNav" data-activates="mobile" data-beloworigin="true" onclick="Materialize.showStaggeredList('#mobile')" class="hide-on-med-and-up dropdown-button btn white-text transparent">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="hide-on-med-and-down" style="text">
-        <li><a class="white-text" href="#">Agenda</a></li>
-        <li><a class="white-text" href="#">Directions</a></li>
-        <li><a class="white-text" href="#map">Map</a></li>
-        <li>
-          <a class="white-text" href="mailto:victorialouisewalton7@gmail.com?cc=scottrumble1@gmail.com&subject=Wedding%20R.S.V.P">R.S.V.P
-          </a>
-        </li>
-      </ul>
-      <ul class="dropdown-content" id="mobile">
-        <li><a class="left black-text" href="#">Agenda</a></li>
-        <li><a class="left black-text" href="#">Directions</a></li>
-        <li><a class="left black-text" href="#map">Map</a></li>
-      </ul>
-    </div>
-  </nav>
-
-    <div id="img-div" class="hide-on-med-and-down">
-      <img id="img" src="./assets/SVSunset.jpg">
-      <h1 id="title">Scott and Viki</h1>
-      <h2 id="title-date">23/06/17</h2>
-    </div>
-
-    <div id="mobile-text" class="hide-on-med-and-up">
-      <h1 id="mobile-title">Scott and Viki</h1>
-      <h2 id="mobile-title-date">23/06/17</h2>
-    </div>
-
-    <div id="map-div" class="container center">
-      <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y" allowfullscreen></iframe>
-    </div>
-  </body> -->
 </html>
