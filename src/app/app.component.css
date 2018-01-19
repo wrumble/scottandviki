@@ -21,7 +21,7 @@
 
 #title-text-small {
   margin-top: 10px;
-  margin-bottom: -5px;
+  margin-bottom: -15px;
   font-size: 15vw;
   font-family: "CallingAngelsPersonalUse";
   text-shadow: 4px 4px 6px #fff;
@@ -42,4 +42,9 @@
 #card-title {
   left: -10px;
   bottom: -20px;
+}
+
+#button {
+  margin-top: 10px;
+  margin-bottom: -15px;
 }
