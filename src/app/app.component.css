@@ -37,6 +37,7 @@
 
 #modal-title {
   font-family: "Strawberry_Whipped_Cream";
+  font-size: 4vw;
 }
 
 #card-title {
@@ -49,4 +50,13 @@
   font-family: "OpenSans-Regular";
   margin-top: 10px;
   margin-bottom: -15px;
+}
+
+#map {
+  width: 90%;
+  height: 400px;
+}
+
+#close-modal-button {
+  margin-right: -30px;
 }
