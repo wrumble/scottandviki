@@ -40,11 +40,13 @@
 }
 
 #card-title {
+  font-family: "OpenSans-Regular";
   left: -10px;
   bottom: -20px;
 }
 
 #button {
+  font-family: "OpenSans-Regular";
   margin-top: 10px;
   margin-bottom: -15px;
 }
