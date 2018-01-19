@@ -1,14 +1,31 @@
 @font-face {
-  font-family: "StrawberryWhippedCream";
-  src: url("./assets/fonts/StrawberryWhippedCream.ttf");
+  font-family: 'Strawberry_Whipped_Cream';
+  src: url('./assets/fonts/Strawberry_Whipped_Cream.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/Strawberry_Whipped_Cream.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/Strawberry_Whipped_Cream.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/Strawberry_Whipped_Cream.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/Strawberry_Whipped_Cream.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/Strawberry_Whipped_Cream.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
 @font-face {
-  font-family: "CallingAngels";
-  src: url("./assets/fonts/CallingAngels.ttf");
+  font-family: 'CallingAngelsPersonalUse';
+  src: url('./assets/fonts/CallingAngelsPersonalUse.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/CallingAngelsPersonalUse.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/CallingAngelsPersonalUse.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/CallingAngelsPersonalUse.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/CallingAngelsPersonalUse.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/CallingAngelsPersonalUse.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url("./assets/fonts/OpenSans-Regular.ttf");
+  font-family: 'OpenSans-Regular';
+  src: url('./assets/fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 html {
@@ -21,6 +38,7 @@ body {
   background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: left top;
+  background-attachment: fixed;
   margin-top: 0;
   width:100%;
   position: absolute;
