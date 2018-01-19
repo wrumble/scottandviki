@@ -89,7 +89,7 @@
 <div id="agenda-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Agenda For The Day</h4>
-    <p>A bunch of text</p>
+    <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
     <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
@@ -99,8 +99,10 @@
 <div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Map of the area and directions</h4>
-    <p>A bunch of text</p>
+    <p id="modal-text">A bunch of text</p>
+    <div class="container center">
       <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y" allowfullscreen></iframe>
+    </div>
       <a id="close-modal-button" class="right waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
@@ -108,7 +110,7 @@
 <div id="confetti-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">D.I.Y some eco friendly confetti</h4>
-    <p>A bunch of text</p>
+    <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
     <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
@@ -118,7 +120,7 @@
 <div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">A List of nearby Hotels and Taxi Rank Numbers</h4>
-    <p>A bunch of text</p>
+    <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
     <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
@@ -128,7 +130,7 @@
 <div id="children-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">What to do with your god damn kids</h4>
-    <p>A bunch of text</p>
+    <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
     <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
@@ -138,7 +140,7 @@
 <div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Fancy Camping in the farm?</h4>
-    <p>A bunch of text</p>
+    <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
     <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>

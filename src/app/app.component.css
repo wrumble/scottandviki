@@ -36,7 +36,16 @@
 }
 
 #modal-title {
+  margin-top: 20px;
+  margin-left: 10px;
   font-family: "Strawberry_Whipped_Cream";
+  font-size: 4vw;
+}
+
+#modal-text {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "OpenSans-Regular";
   font-size: 4vw;
 }
 
@@ -59,4 +68,13 @@
 
 #close-modal-button {
   margin-right: -30px;
+}
+
+.modal {
+  width: 95%;
+  height: 100%;
+}
+
+.modal .modal-content {
+  padding: 0px;
 }
