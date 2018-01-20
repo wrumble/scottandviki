@@ -84,25 +84,38 @@
           </div>
         </a>
       </div>
-      <!-- Map Card -->
-      <div class="col s12 m6 l6 xl4">
-        <a href="#" onclick="$('#gifts-modal').modal('open');">
-          <div class="card">
-            <div class="card-image">
-              <img src="./assets/7.jpg" class="z-depth-4">
-              <span id="card-title" class="card-title">Gifts</span>
-            </div>
-          </div>
-        </a>
-      </div>
 
       <!-- Map Card -->
       <div class="col s12 m6 l6 xl4">
         <a href="#" onclick="$('#dress-modal').modal('open');">
           <div class="card">
             <div class="card-image">
-              <img src="./assets/3.jpg" class="z-depth-4">
+              <img src="./assets/7.jpg" class="z-depth-4">
               <span id="card-title" class="card-title">Dress Code</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Gift Card -->
+      <div class="col s12 m6 l6 xl4 show-on-medium-and-up hide-on-small-only">
+        <a href="#" onclick="$('#gifts-modal').modal('open');">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/3-2.jpg" class="z-depth-4">
+              <span id="card-title" class="card-title">Gifts</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Gift Card small-->
+      <div class="col s12 m6 l6 xl4 show-on-small-only hide-on-med-and-up">
+        <a href="#" onclick="$('#gifts-modal').modal('open');">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/3.jpg" class="z-depth-4">
+              <span id="small-card-title" class="card-title">Gifts</span>
             </div>
           </div>
         </a>
@@ -115,6 +128,7 @@
   <div class="modal-content">
     <h4 id="modal-title">Agenda For The Day</h4>
     <p id="modal-text">Ceremony at 12:30, Reception at 19:30</p>
+    <p id="modal-text">There will be a cash bar available throughout the evening</p>
     <p id="modal-text">There will be a small buffet in the evening to keep your  dancing energy up!</p>
   </div>
   <div class="modal-footer">
@@ -181,7 +195,7 @@
 <div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">A List of nearby Hotels and Taxi Rank Numbers</h4>
-    <p id="modal-text">A bunch of text</p>
+    <p id="modal-text">You may want to also check Air B’n’B if you can’t find what you’re looking for.</p>
   </div>
   <div class="modal-footer">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
@@ -218,11 +232,13 @@ So book a sitter and dust off those dancing shoes!</p>
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 
-  <!-- Gift List Modal -->
+  <!-- Dress List Modal -->
   <div id="Dress-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
     <div class="modal-content">
       <h4 id="modal-title">What to wear!</h4>
-      <p id="modal-text">A bunch of text</p>
+      <p id="modal-text">Gentlemen: Tails or suits - you all scrub up well!</p>
+      <p id="modal-text">Ladies: Dress to feel fabulous! Large hats and accessories most definitely encouraged!</p>
+      <p id="modal-text">All guests: Dancing shoes obligatory!</p>
     </div>
     <div class="modal-footer">
       <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
