@@ -17,6 +17,7 @@
       </div>
     </div>
   </div>
+  <!-- Agenda Card -->
   <div id="card-row" class="row">
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#agenda-modal').modal('open');">
@@ -86,63 +87,76 @@
   </div>
 </div>
 <!-- Agenda Modal -->
-<div id="agenda-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+<div id="agenda-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Agenda For The Day</h4>
     <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
-    <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
 <!-- Map Modal -->
-<div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+<div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Map of the area and directions</h4>
     <p id="modal-text">A bunch of text</p>
     <div class="container center">
       <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=11" allowfullscreen></iframe>
     </div>
-      <a id="close-modal-button" class="right waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    <div class="container center">
+      <img id="map-image" class="center materialboxed" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." src="./assets/Map1.png">
+      <p id="map-image-text" >The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map.</p>
+      <img id="map-image" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." class="materialboxed" src="./assets/Map2.png">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
 <!-- Confetti Modal -->
-<div id="confetti-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+<div id="confetti-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">D.I.Y some eco friendly confetti</h4>
     <p id="modal-text">A bunch of text</p>
+    <div>
+      <a id="confetti-link" href="https://wildflower-favours.co.uk/make-natural-petal-confetti-home/">Follow this link to find out how</a>
+    </div>
+    <div class="container center">
+      <img src="./assets/leaf-confetti.jpg" alt="">
+    </div>
   </div>
   <div class="modal-footer">
-    <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
 <!-- Hotel Modal -->
-<div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+<div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">A List of nearby Hotels and Taxi Rank Numbers</h4>
     <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
-    <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
 <!-- Children Modal -->
-<div id="children-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+<div id="children-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">What to do with your god damn kids</h4>
     <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
-    <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
 <!-- Camping Modal -->
-<div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+<div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Fancy Camping in the farm?</h4>
     <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
-    <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>

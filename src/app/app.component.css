@@ -35,6 +35,16 @@
   text-shadow: 2px 2px 4px #fff;
 }
 
+/* #title-row-small {
+  z-index: 100;
+  position: fixed;
+}
+
+#card-row {
+  position: relative;
+  overflow: auto;
+} */
+
 #modal-title {
   margin-top: 20px;
   margin-left: 10px;
@@ -66,15 +76,36 @@
   height: 400px;
 }
 
-#close-modal-button {
-  margin-right: -30px;
+#map-image {
+  width: 70%;
+  height: auto;
+}
+
+#map-image-text {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 30px;
+  font-family: "OpenSans-Regular";
+}
+
+#confetti-link {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "OpenSans-Regular";
 }
 
 .modal {
   width: 95%;
-  height: 100%;
+  padding: 0px;
 }
 
-.modal .modal-content {
+.modal-content {
+  height: auto !important;
   padding: 0px;
+}
+
+.modal-footer {
+  position: fixed;
+  bottom: 0;
 }
