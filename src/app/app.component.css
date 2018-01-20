@@ -68,6 +68,9 @@
     height: 100%;
     padding-bottom: 200px;
   }
+  #card-title {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (min-width: 480px){
@@ -76,6 +79,9 @@
     position: relative;
     overflow: hidden;
   }
+  #card-title {
+    font-size: 35px;
+  }
 }
 
 @media only screen and (min-width: 1200px){
@@ -83,6 +89,9 @@
     top: 10px;
     position: relative;
     overflow: hidden;
+  }
+  #card-title {
+    font-size: 35px;
   }
 }
 
@@ -101,7 +110,7 @@
 }
 
 #card-title {
-  font-family: "OpenSans-Regular";
+  font-family: "Strawberry_Whipped_Cream";
   left: -10px;
   bottom: -20px;
 }
