@@ -65,8 +65,7 @@
     top: 147px;
     position: relative;
     overflow: scroll;
-    height: 100%;
-    padding-bottom: 200px;
+    height: 70.5%;
   }
   #card-title {
     font-size: 30px;
@@ -75,9 +74,10 @@
 
 @media only screen and (min-width: 480px){
   #card-row {
-    top: 50px;
+    top: 0px;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
+    height: 90%;
   }
   #card-title {
     font-size: 35px;
@@ -88,7 +88,8 @@
   #card-row {
     top: 10px;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
+    height: 65%;
   }
   #card-title {
     font-size: 35px;
