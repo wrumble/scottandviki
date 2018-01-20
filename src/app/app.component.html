@@ -84,6 +84,18 @@
           </div>
         </a>
       </div>
+      <!-- Map Card -->
+      <div class="col s12 m6 l6 xl4">
+        <a href="#" onclick="$('#gifts-modal').modal('open');">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/7.jpg" class="z-depth-4">
+              <span id="card-title" class="card-title">Gifts</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
 </div>
 <!-- Agenda Modal -->
@@ -91,6 +103,7 @@
   <div class="modal-content">
     <h4 id="modal-title">Agenda For The Day</h4>
     <p id="modal-text">Ceremony at 12:30, Reception at 19:30</p>
+    <p id="modal-text">There will be a small buffet in the evening to keep your  dancing energy up!</p>
   </div>
   <div class="modal-footer">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
@@ -108,11 +121,21 @@
       <div class="row">
         <div class="container center">
           <div class="col s12">
+            <p id="modal-text">Reception - From the A26 from Tonbridge turn right onto Bidborough Ridge/B2176. Drive through Bidborough village and stay on the B2176.  Once out of the village turn right onto Hayesden Lane signposted Leigh. Juddwood Farm can be found on your right.</p>
+            <p id="modal-text">Church - Mayfield village is signposted off of the A267, and the church can be found in the middle of the village off of the High Street.</p>
+            <p id="modal-text">Parking - The car park in Mayfield is free to park!</p>
+            <p>Add driving times</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container center">
+          <div class="col s12">
             <img id="map-image" class="center materialboxed" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." src="./assets/Map1.png">
           </div>
         </div>
       </div>
-      <p id="map-image-text" class="center flow-text">The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map.</p>
+      <p id="map-image-text" class="center flow-text">The car park is signposted on the right-hand side of the High Street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for The Middle House as seen on the map.</p>
       <div class="row">
         <div class="container center">
           <div class="col s12">
@@ -167,6 +190,16 @@ So book a sitter and dust off those dancing shoes!</p>
 <div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Fancy Camping in the farm?</h4>
+    <p id="modal-text">A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
+  </div>
+</div>
+<!-- Gift List Modal -->
+<div id="gifts-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
+  <div class="modal-content">
+    <h4 id="modal-title">Give us stuff!</h4>
     <p id="modal-text">A bunch of text</p>
   </div>
   <div class="modal-footer">
