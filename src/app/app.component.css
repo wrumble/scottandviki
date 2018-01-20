@@ -1,19 +1,20 @@
 #main-container {
-  width: 95%;
+  overflow: hidden;
   height: 100%;
+  width: 95%;
 }
 
 #title-text {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 0px;
   font-size: 80px;
   color: black;
   font-family: "CallingAngelsPersonalUse";
-  text-shadow: 4px 6px 12px #ooo;
+  text-shadow: 4px 6px 12px #fff;
 }
 
 #date-text {
-  margin-top: 0px;
+  margin-top: -20px;
   margin-bottom: 0px;
   font-size: 45px;
   color: black;
@@ -21,33 +22,69 @@
   text-shadow: 2px 4px 6px #fff;
 }
 
+#title-row {
+  margin-bottom: 40px;
+}
+
 #title-text-small {
+  background:inherit;
   margin-top: 10px;
   margin-bottom: -15px;
-  font-size: 15vw;
+  font-size: 12vw;
   color: black;
   font-family: "CallingAngelsPersonalUse";
   text-shadow: 4px 6px 12px #fff;
 }
 
 #date-text-small {
+  background:inherit;
   margin-top: 0px;
   margin-bottom: -15px;
-  font-size: 12vw;
+  font-size: 10vw;
   color: black;
   font-family: "Strawberry_Whipped_Cream";
   text-shadow: 2px 4px 6px #fff;
 }
 
-/* #title-row-small {
+#title-row-small {
+  right: 0;
   z-index: 100;
   position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
 }
 
-#card-row {
-  position: relative;
-  overflow: auto;
-} */
+#title-container-small {
+  background:inherit;
+  width: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  #card-row {
+    top: 147px;
+    position: relative;
+    overflow: scroll;
+    height: 100%;
+    padding-bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 480px){
+  #card-row {
+    top: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #card-row {
+    top: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+}
 
 #modal-title {
   margin-top: 20px;
