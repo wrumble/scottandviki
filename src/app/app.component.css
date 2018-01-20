@@ -147,20 +147,20 @@
   position: fixed;
   left:0;
   right:0;
-  max-height:80%;
-  height: 80%;
+  max-height:auto;
+  height: auto;
   width: 99%;
   margin: auto;
 }
 
 .modal-content {
-  height:90%;
+  height: auto;
   padding:0;
   overflow: auto;
+  padding: 10px;
 }
 
 .modal-footer {
   bottom: 0px;
   overflow-y: scroll;
-
 }
