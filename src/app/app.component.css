@@ -68,19 +68,55 @@
     height: 65%;
   }
   #card-title {
+    font-family: "CallingAngelsPersonalUse";
     font-size: 30px;
+    left: -5px;
+    bottom: -20px;
   }
 }
 
-@media only screen and (min-width: 480px){
+@media screen and (max-width: 768px) {
   #card-row {
     vertical-align: middle;
     position: relative;
     overflow: scroll;
-    height: 90%;
+    height: 75%;
   }
   #card-title {
-    font-size: 35px;
+    font-family: "CallingAngelsPersonalUse";
+    font-size: 30px;
+    left: -5px;
+    bottom: -20px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  #card-row {
+    vertical-align: middle;
+    position: relative;
+    overflow: scroll;
+    height: 65%;
+  }
+  #card-title {
+    font-family: "CallingAngelsPersonalUse";
+    font-size: 30px;
+    left: 0px;
+    bottom: -20px;
+  }
+}
+
+@media only screen and (min-width: 1023px){
+  #card-row {
+    vertical-align: middle;
+    position: relative;
+    overflow: scroll;
+    height: 75%;
+  }
+  #card-title {
+    font-family: "CallingAngelsPersonalUse";
+    font-size: 30px;
+    left: 0px;
+    bottom: -20px;
   }
 }
 
@@ -92,7 +128,10 @@
     height: 65%;
   }
   #card-title {
-    font-size: 35px;
+    font-family: "CallingAngelsPersonalUse";
+    font-size: 30px;
+    left: -5px;
+    bottom: -20px;
   }
 }
 
@@ -110,16 +149,10 @@
   font-size: 25px;
 }
 
-#card-title {
-  font-family: "CallingAngelsPersonalUse";
-  left: -10px;
-  bottom: -20px;
-}
-
 #small-card-title {
   font-family: "CallingAngelsPersonalUse";
   font-size: 30px;
-  left: -10px;
+  left: 0px;
   bottom: -20px;
   color: black;
 }
@@ -129,6 +162,10 @@
   font-size: 17px;
   margin-top: 10px;
   margin-bottom: -15px;
+}
+
+#close-modal-button {
+  font-family: "DancingScript-Regular";
 }
 
 #map {
