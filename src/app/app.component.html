@@ -96,6 +96,18 @@
         </a>
       </div>
 
+      <!-- Map Card -->
+      <div class="col s12 m6 l6 xl4">
+        <a href="#" onclick="$('#dress-modal').modal('open');">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/3.jpg" class="z-depth-4">
+              <span id="card-title" class="card-title">Dress Code</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
 </div>
 <!-- Agenda Modal -->
@@ -205,4 +217,14 @@ So book a sitter and dust off those dancing shoes!</p>
   <div class="modal-footer">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
+
+  <!-- Gift List Modal -->
+  <div id="Dress-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
+    <div class="modal-content">
+      <h4 id="modal-title">What to wear!</h4>
+      <p id="modal-text">A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
+    </div>
 </div>
