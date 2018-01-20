@@ -140,6 +140,7 @@
     <h4 id="modal-title">Map of the area and directions</h4>
     <div class="container center">
       <div class="row">
+        <div class="overlay" onClick="style.pointerEvents='none'"></div>
         <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=10" allowfullscreen></iframe>
       </div>
       <p id="modal-text"><b>Church</b> - Mayfield village is signposted off of the A267, and the church can be found in the middle of the village off of the High Street.</p>
@@ -193,7 +194,7 @@
 <!-- Children Modal -->
 <div id="children-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">What to do with your god damn kids</h4>
+    <h4 id="modal-title">Children at the wedding</h4>
     <p id="modal-text">Unfortunately, as much as we’d love to invite all of our friend’s children, we can only accommodate children from the bridal party and a few close family. We hope you understand this decision and this advance notice means you are able to share our big day.
 So book a sitter and dust off those dancing shoes!</p>
   </div>
