@@ -28,6 +28,16 @@
        url('./assets/fonts/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url('./assets/fonts/DancingScript-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/DancingScript-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/DancingScript-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/DancingScript-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/DancingScript-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/DancingScript-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html {
     background-color: #DBD1E3;
     margin: 0;

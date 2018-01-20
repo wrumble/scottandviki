@@ -99,15 +99,15 @@
 #modal-title {
   margin-top: 20px;
   margin-left: 10px;
-  font-family: "Strawberry_Whipped_Cream";
+  font-family: "CallingAngelsPersonalUse";
   font-size: 35px;
 }
 
 #modal-text {
   margin-top: 10px;
   margin-left: 10px;
-  font-family: "OpenSans-Regular";
-  font-size: 16px;
+  font-family: "DancingScript-Regular";
+  font-size: 25px;
 }
 
 #card-title {
@@ -125,7 +125,8 @@
 }
 
 #button {
-  font-family: "OpenSans-Regular";
+  font-family: "DancingScript-Regular";
+  font-size: 17px;
   margin-top: 10px;
   margin-bottom: -15px;
 }
@@ -138,18 +139,6 @@
 #map-image {
   width: 100%;
   height: auto;
-}
-
-#map-image-text {
-  text-align: center;
-  margin-top: 10px;
-  font-family: "OpenSans-Regular";
-}
-
-#confetti-link {
-  margin-top: 10px;
-  margin-left: 10px;
-  font-family: "OpenSans-Regular";
 }
 
 .modal {
