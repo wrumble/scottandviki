@@ -4,7 +4,7 @@
       <div class="show-on-medium-and-up hide-on-small-only">
         <p id="title-text">Scott and Viki</p>
         <p id="date-text">23/06/18</p>
-        <a id="button" class="black waves-effect waves-light btn" href="mailto:scottandviki@gmail.com?subject=Wedding%20R.S.V.P"><i class="material-icons right">email</i>R.S.V.P</a>
+        <a id="button" class="black waves-effect waves-light btn z-depth-5" href="mailto:scottandviki@gmail.com?subject=Wedding%20R.S.V.P"><i class="material-icons right">email</i>R.S.V.P</a>
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@
       <div class="show-on-small-only hide-on-med-and-up">
         <p id="title-text-small">Scott and Viki</p>
         <p id="date-text-small">23/06/18</p>
-        <a id="button" class="black waves-effect waves-light btn" href="mailto:scottandviki@gmail.com?subject=Wedding%20R.S.V.P"><i class="material-icons right">email</i>R.S.V.P</a>
+        <a id="button" class="black waves-effect waves-light btn z-depth-5" href="mailto:scottandviki@gmail.com?subject=Wedding%20R.S.V.P"><i class="material-icons right">email</i>R.S.V.P</a>
       </div>
     </div>
   </div>
@@ -22,66 +22,66 @@
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#agenda-modal').modal('open');">
         <div class="card">
-        <div class="card-image">
-          <img src="./assets/SVSunset.jpg">
-          <span id="card-title" class="card-title">Agenda</span>
+          <div class="card-image">
+            <img src="./assets/SVSunset.jpg" class="z-depth-5">
+            <span id="card-title" class="card-title">Agenda</span>
+          </div>
         </div>
-      </div>
       </a>
     </div>
     <!-- Map Card -->
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#map-modal').modal('open');">
         <div class="card">
-        <div class="card-image">
-          <img src="./assets/1.jpg">
-          <span id="card-title" class="card-title">Map</span>
+          <div class="card-image">
+            <img src="./assets/1.jpg" class="z-depth-5">
+            <span id="card-title" class="card-title">Map</span>
+          </div>
         </div>
-      </div>
       </a>
     </div>
     <!-- Confetti Card -->
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#confetti-modal').modal('open');">
         <div class="card">
-        <div class="card-image">
-          <img src="./assets/2.jpg">
-          <span id="card-title" class="card-title">Confetti</span>
+          <div class="card-image">
+            <img src="./assets/2.jpg" class="z-depth-5">
+            <span id="card-title" class="card-title">Confetti</span>
+          </div>
         </div>
-      </div>
       </a>
     </div>
     <!-- Hotels & Taxi's Card -->
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#hotel-modal').modal('open');">
         <div class="card">
-        <div class="card-image">
-          <img src="./assets/4.jpg">
-          <span id="card-title" class="card-title">Hotels & Taxi's</span>
+          <div class="card-image">
+            <img src="./assets/4.jpg" class="z-depth-5">
+            <span id="card-title" class="card-title">Hotels & Taxi's</span>
+          </div>
         </div>
-      </div>
       </a>
     </div>
     <!-- Children Card -->
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#children-modal').modal('open');">
         <div class="card">
-        <div class="card-image">
-          <img src="./assets/5.jpg">
-          <span id="card-title" class="card-title">Children</span>
+          <div class="card-image">
+            <img src="./assets/5.jpg" class="z-depth-5">
+            <span id="card-title" class="card-title">Children</span>
+          </div>
         </div>
-      </div>
       </a>
     </div>
     <!-- Camping Card -->
     <div class="col s12 m6 l4">
       <a href="#" onclick="$('#camping-modal').modal('open');">
         <div class="card">
-        <div class="card-image">
-          <img src="./assets/6.jpg">
-          <span id="card-title" class="card-title">Camping</span>
+          <div class="card-image">
+            <img src="./assets/6.jpg" class="z-depth-5">
+            <span id="card-title" class="card-title">Camping</span>
+          </div>
         </div>
-      </div>
       </a>
     </div>
   </div>
@@ -99,15 +99,27 @@
 <!-- Map Modal -->
 <div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">Map of the area and directions</h4>
-    <p id="modal-text">A bunch of text</p>
+    <h4 id="modal-title" class="flow-text">Map of the area and directions</h4>
+    <p id="modal-text" class="flow-text">A bunch of text</p>
     <div class="container center">
-      <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=11" allowfullscreen></iframe>
+      <div class="row">
+        <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=11" allowfullscreen></iframe>
+      </div>
+      <div class="row">
+        <div class="container center">
+          <div class="col s12">
+            <img id="map-image" class="center materialboxed" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." src="./assets/Map1.png">
+          </div>
+        </div>
+      </div>
+      <p id="map-image-text" class="center flow-text">The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map.</p>
+      <div class="row">
+        <div class="container center">
+          <div class="col s12">
+          <img id="map-image" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." class="materialboxed" src="./assets/Map2.png">
+        </div>
+      </div>
     </div>
-    <div class="container center">
-      <img id="map-image" class="center materialboxed" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." src="./assets/Map1.png">
-      <p id="map-image-text" >The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map.</p>
-      <img id="map-image" data-caption="The car park is signposted on the right-hand side of the high street as you are driving up the hill. The easiest way to get to the church from the car park is to walk through the car park for the middle house as seen on the map." class="materialboxed" src="./assets/Map2.png">
     </div>
   </div>
   <div class="modal-footer">
@@ -117,7 +129,7 @@
 <!-- Confetti Modal -->
 <div id="confetti-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">D.I.Y some eco friendly confetti</h4>
+    <h4 id="modal-title" class="flex-text">D.I.Y some eco friendly confetti</h4>
     <p id="modal-text">A bunch of text</p>
     <div>
       <a id="confetti-link" href="https://wildflower-favours.co.uk/make-natural-petal-confetti-home/">Follow this link to find out how</a>
