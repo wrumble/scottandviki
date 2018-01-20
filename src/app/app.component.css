@@ -65,7 +65,7 @@
     top: 147px;
     position: relative;
     overflow: scroll;
-    height: 70.5%;
+    height: 65%;
   }
   #card-title {
     font-size: 30px;
@@ -100,7 +100,7 @@
   margin-top: 20px;
   margin-left: 10px;
   font-family: "CallingAngelsPersonalUse";
-  font-size: 35px;
+  font-size: 28px;
 }
 
 #modal-text {
@@ -133,13 +133,25 @@
 
 #map {
   width: 100%;
-  height: 400px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 300px;
+  margin-top: -300px;
 }
 
 #map-image {
   width: 100%;
   height: auto;
 }
+
+
 
 .modal {
   position: fixed;
