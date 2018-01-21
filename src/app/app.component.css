@@ -204,7 +204,7 @@
   padding: 10px;
   background-image: url('../assets/petals.JPG');
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% auto;
   background-position: left top;
 }
 
