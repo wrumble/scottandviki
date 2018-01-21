@@ -194,6 +194,18 @@
     <h4 id="modal-title">A List of nearby Hotels and Taxi Numbers</h4>
     <p id="modal-text">You may want to also check <a style="display: inline" href="https://www.airbnb.co.uk/s/TN20-6AB/homes?checkin=2018-06-22&checkout=2018-06-24&allow_override%5B%5D=&ne_lat=51.199611408763&ne_lng=0.5075977291901381&sw_lat=50.792793890757686&sw_lng=-0.034852221981736875&zoom=10&search_by_map=true&s_tag=riXVzlwQ" target="_blank">Airbnb</a> if you can’t find what you’re looking for.</p>
   </div>
+  <p id="modal-text">Hotels</p>
+  <div class="row">
+    <div class="overlay" onClick="style.pointerEvents='none'">
+    </div>
+      <iframe id="map" class="center" src="https://www.google.co.uk/maps/search/hotels/@51.1559125,0.2267996,13z" allowfullscreen></iframe>
+  </div>
+  <p id="modal-text">Taxi's</p>
+  <div class="row">
+    <div class="overlay" onClick="style.pointerEvents='none'">
+    </div>
+      <iframe id="map" class="center" src="https://www.google.co.uk/maps/search/taxi/@51.1647299,0.2142682,13z/data=!3m1!4b1" allowfullscreen></iframe>
+  </div>
   <div class="modal-footer transparent">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>

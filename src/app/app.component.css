@@ -195,6 +195,10 @@
   height: auto;
   width: 99%;
   margin: auto;
+  background-image: url('../assets/petals.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left top;
 }
 
 .modal-content {
@@ -202,10 +206,6 @@
   padding:0;
   overflow: auto;
   padding: 10px;
-  background-image: url('../assets/petals.JPG');
-  background-attachment: fixed;
-  background-size: 100% auto;
-  background-position: left top;
 }
 
 .modal-footer {
