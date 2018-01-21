@@ -202,6 +202,10 @@
   padding:0;
   overflow: auto;
   padding: 10px;
+  background-image: url('../assets/petals.JPG');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left top;
 }
 
 .modal-footer {
