@@ -223,3 +223,21 @@
   bottom: 0px;
   overflow-y: scroll;
 }
+
+@media print {
+  #overlay, #close-modal-button, #print-button * {
+    display: none !important;
+  }
+  #map-modal * {
+    visibility: visible;
+  }
+  #map-modal, #map-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible!important;
+    display: block;
+  }
+}

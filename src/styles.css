@@ -38,6 +38,12 @@
        url('./assets/fonts/DancingScript-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@media print {
+  html, body * {
+    visibility: hidden;
+  }
+}
+
 html {
     background-color: #DBD1E3;
     margin: 0;

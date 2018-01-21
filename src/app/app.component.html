@@ -136,14 +136,14 @@
 </div>
 <!-- Map Modal -->
 <div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
-  <div class="modal-content">
+  <div id="map-modal-content" class="modal-content">
     <h4 id="modal-title">Map of the area and directions</h4>
     <div class="container center">
       <div class="row">
-        <div class="overlay" onClick="style.pointerEvents='none'">
+        <div id="overlay" class="overlay" onClick="style.pointerEvents='none'">
         </div>
           <div class="center">
-            <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=10" allowfullscreen></iframe>
+            <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=11" allowfullscreen></iframe>
           </div>
       </div>
       <hr>
@@ -175,7 +175,7 @@
   </div>
   <div class="row">
     <div class="container center">
-      <a id="button" onClick="window.print()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a>
+      <a id="print-button" onClick="window.print()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a>
     </div>
   </div>
   <div class="modal-footer transparent">
@@ -231,7 +231,7 @@ So book a sitter and dust off those dancing shoes!</p>
 <!-- Camping Modal -->
 <div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">Fancy Camping in the farm?</h4>
+    <h4 id="modal-title">Fancy Camping on the farm?</h4>
     <p id="modal-text">You are welcome to camp on the farm to save travelling to a hotel.
 Closer to the time we will mark out where to camp depending on weather conditions in the lead up!</p>
   </div>
