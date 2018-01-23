@@ -142,9 +142,11 @@
       <div class="row">
         <div id="overlay" class="overlay" onClick="style.pointerEvents='none'">
         </div>
-          <div class="center">
-            <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1T1AFckKqP4J38fIJswg8uEr42hyB3R5y&ll=51.06791175093598%2C0.21307320000005348&z=11" allowfullscreen></iframe>
-          </div>
+        <div id="map">
+          <script type="text/javascript">
+              google.maps.event.trigger(map, 'resize');
+          </script>
+        </div>
       </div>
       <hr>
       <p id="modal-text"><b>St Dunstan’s Church, Mayfield TN20 6AB</b><br>Mayfield village is signposted on the A267 and the church is situated in the middle of the village on the High Street.</p>
@@ -162,7 +164,7 @@
       <div class="row">
         <div class="overlay" onClick="style.pointerEvents='none'">
         </div>
-          <iframe id="map" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1uReFxtB4ZhFSwVtD8vQ7L3qKpetdMElh&ll=51.096412867708054%2C0.240690000000086&z=11" allowfullscreen></iframe>
+          <iframe id="map1" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1uReFxtB4ZhFSwVtD8vQ7L3qKpetdMElh&ll=51.096412867708054%2C0.240690000000086&z=11" allowfullscreen></iframe>
       </div>
       <div class="row">
         <div class="container center">
@@ -206,13 +208,13 @@
   <div class="row">
     <div class="overlay" onClick="style.pointerEvents='none'">
     </div>
-      <iframe id="map" class="center" src="https://www.google.co.uk/maps/search/hotels/@51.1559125,0.2267996,13z" allowfullscreen></iframe>
+      <!-- <iframe id="map1" class="center" src="https://www.google.co.uk/maps/search/hotels/@51.1559125,0.2267996,13z" allowfullscreen></iframe> -->
   </div>
   <p id="modal-text">Taxi's</p>
   <div class="row">
     <div class="overlay" onClick="style.pointerEvents='none'">
     </div>
-      <iframe id="map" class="center" src="https://www.google.co.uk/maps/search/taxi/@51.1647299,0.2142682,13z/data=!3m1!4b1" allowfullscreen></iframe>
+      <!-- <iframe id="map1" class="center" src="https://www.google.co.uk/maps/search/taxi/@51.1647299,0.2142682,13z/data=!3m1!4b1" allowfullscreen></iframe> -->
   </div>
   <div class="modal-footer transparent">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>

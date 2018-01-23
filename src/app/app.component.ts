@@ -1,9 +1,9 @@
-import {Component, OnInit, ViewChild, EventEmitter, Inject} from '@angular/core';
+import {Component, OnInit, ViewChild, EventEmitter, Inject, AfterViewInit} from '@angular/core';
 import {MaterializeAction} from 'angular2-materialize';
-import * as jsPDF from 'jspdf'
-import * as html2canvas from "html2canvas"
+import {} from '@types/googlemaps';
+import * as $ from 'jquery';
 
-declare var $: any
+declare var google: any;
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,7 @@ declare var $: any
     { provide: 'Window',  useValue: window }
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'app';
 
   modalActions = new EventEmitter<string|MaterializeAction>();
@@ -25,13 +25,20 @@ export class AppComponent implements OnInit {
     this.modalActions.emit({action:"modal",params:['close']});
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    var mapProp = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 11,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+    var map = new google.maps.Map(document.getElementById("map"), mapProp);
+  }
 
-  download(){
-     const elementToPrint = document.getElementById('map-modal');
-     console.log('map-modal',elementToPrint); //The html element to become a pdf
-     const pdf = new jsPDF('p', 'pt', 'a4');
-     pdf.addHTML(elementToPrint, () => {
-       pdf.save('web.pdf');
-     });
+  ngAfterViewInit() {
+    $(document).ready(function() {
+        google.maps.event.addListener(map, "idle", function(){
+            google.maps.event.trigger(map, 'resize');
+        });
+    });
+  }
 }
