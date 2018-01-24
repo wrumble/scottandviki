@@ -31,7 +31,7 @@
       </div>
       <!-- Map Card -->
       <div class="col s12 m6">
-        <a href="#" onclick="$('#map-modal').modal('open');">
+        <a href="#" onclick="$('#map-modal').modal('open');" role="button" (click)="openMap()">
           <div class="card">
             <div class="card-image">
               <img src="./assets/1.jpg" class="z-depth-4">
@@ -178,7 +178,6 @@
   <div class="row">
     <div class="container center">
       <a id="print-button" onClick="window.print()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a>
-      <a id="print-button" (click)="download()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">download</i>Save this page as PDF</a>
     </div>
   </div>
   <div class="modal-footer transparent">
@@ -201,7 +200,7 @@
 <!-- Hotel Modal -->
 <div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">A List of nearby Hotels and Taxi Numbers</h4>
+    <h4 id="modal-title">A List of nearby Hotels and Taxi Telephone Numbers</h4>
     <p id="modal-text">You may want to also check <a style="display: inline" href="https://www.airbnb.co.uk/s/TN20-6AB/homes?checkin=2018-06-22&checkout=2018-06-24&allow_override%5B%5D=&ne_lat=51.199611408763&ne_lng=0.5075977291901381&sw_lat=50.792793890757686&sw_lng=-0.034852221981736875&zoom=10&search_by_map=true&s_tag=riXVzlwQ" target="_blank">Airbnb</a> if you can’t find what you’re looking for.</p>
   </div>
   <p id="modal-text">Hotels</p>
@@ -224,7 +223,7 @@
 <div id="children-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Children at the wedding</h4>
-    <p id="modal-text">Unfortunately, as much as we’d love to invite all of our friend’s children, we can only accommodate children from the bridal party and a few close family. We hope you understand this decision and this advance notice means you are able to share our big day.
+    <p id="modal-text">Unfortunately, as much as we would love to invite all of our friend’s children, we can only accommodate children from the bridal party and a few close family. We hope you understand this decision and this advance notice means you are able to share our big day.
 So book a sitter and dust off those dancing shoes!</p>
   </div>
   <div class="modal-footer transparent">
@@ -234,7 +233,7 @@ So book a sitter and dust off those dancing shoes!</p>
 <!-- Camping Modal -->
 <div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">Fancy Camping on the farm?</h4>
+    <h4 id="modal-title">Fancy Camping on the farm</h4>
     <p id="modal-text">You are welcome to camp on the farm to save travelling to a hotel.
 Closer to the time we will mark out where to camp depending on weather conditions in the lead up!</p>
   </div>
@@ -245,8 +244,9 @@ Closer to the time we will mark out where to camp depending on weather condition
 <!-- Gift List Modal -->
 <div id="gifts-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">Give us stuff!</h4>
-    <p id="modal-text">A bunch of text</p>
+    <h4 id="modal-title">Gifts</h4>
+    <p id="modal-text">If you did want to get us a gift, we have chosen to do a gift list with John Lewis.
+The number is 0345600220 and the list will open on the 12th May</p>
   </div>
   <div class="modal-footer transparent">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
@@ -255,7 +255,7 @@ Closer to the time we will mark out where to camp depending on weather condition
   <!-- Dress Modal -->
 <div id="dress-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
-    <h4 id="modal-title">What to wear!</h4>
+    <h4 id="modal-title">What to wear</h4>
     <p id="modal-text"><b>Gentlemen:</b> Tails or suits - you all scrub up well!</p>
     <p id="modal-text"><b>Ladies:</b> Dress to feel fabulous! Large hats and accessories most definitely encouraged!</p>
     <p id="modal-text"><b>All guests:</b> Dancing shoes obligatory!</p>

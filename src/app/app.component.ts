@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, EventEmitter, Inject, AfterViewInit} from '@angular/core';
+import {Component, OnInit, ViewChild, EventEmitter, Inject} from '@angular/core';
 import {MaterializeAction} from 'angular2-materialize';
 import {} from '@types/googlemaps';
 import * as $ from 'jquery';
@@ -13,32 +13,33 @@ declare var google: any;
     { provide: 'Window',  useValue: window }
   ]
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
   title = 'app';
 
   modalActions = new EventEmitter<string|MaterializeAction>();
 
-  openModal() {
-    this.modalActions.emit({action:"modal",params:['open']});
-  }
-  closeModal() {
-    this.modalActions.emit({action:"modal",params:['close']});
-  }
+  ngOnInit() {}
 
-  ngOnInit() {
+  openMap() {
     var mapProp = {
-          center: new google.maps.LatLng(-34.397, 150.644),
+          center: new google.maps.LatLng(51.0207156, 0.2595007),
           zoom: 11,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            mapTypeIds: ['roadmap', 'terrain']
+          }
       };
     var map = new google.maps.Map(document.getElementById("map"), mapProp);
-  }
-
-  ngAfterViewInit() {
-    $(document).ready(function() {
-        google.maps.event.addListener(map, "idle", function(){
-            google.maps.event.trigger(map, 'resize');
-        });
+    let myLatlng = new google.maps.LatLng(51.0207156, 0.2595007);
+    let marker = new google.maps.Marker({
+           draggable: true,
+           animation: google.maps.Animation.DROP,
+             position: myLatlng,
+             icon: "",
+             label: "St Dunstan's Church",
+             map: map,
     });
   }
 }
