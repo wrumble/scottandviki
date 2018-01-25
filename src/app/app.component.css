@@ -181,6 +181,14 @@
   padding: 0;
 }
 
+#map-modal {
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height:  90%!important;
+  bottom: 10%;
+}
+
 .overlay {
   background: transparent;
   position: relative;

@@ -22,8 +22,8 @@ export class AppComponent implements OnInit {
 
   openMap() {
     var mapProp = {
-          center: new google.maps.LatLng(51.0207156, 0.2595007),
-          zoom: 11,
+          center: new google.maps.LatLng(51.0207156, 0.260662),
+          zoom: 14,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: true,
           mapTypeControlOptions: {
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
           }
       };
     var map = new google.maps.Map(document.getElementById("map"), mapProp);
-    let myLatlng = new google.maps.LatLng(51.0207156, 0.2595007);
+    let myLatlng = new google.maps.LatLng(51.0207156, 0.260662);
     let marker = new google.maps.Marker({
            draggable: true,
            animation: google.maps.Animation.DROP,
