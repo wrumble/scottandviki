@@ -63,10 +63,11 @@
 @media screen and (max-width: 479px) {
   #card-row {
     top: 147px;
-    position: relative;
+    position: absolute;
     overflow: scroll;
+    left: 1%;
+    right: 1%;
     bottom: 0;
-    height: 60%;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
@@ -78,10 +79,11 @@
 
 @media screen and (max-width: 768px) {
   #card-row {
-    vertical-align: middle;
-    position: relative;
+    position: absolute;
     overflow: scroll;
-    min-height: auto;
+    top: 230px;
+    width: 100%;
+    bottom: 0;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
@@ -93,10 +95,12 @@
 
 @media only screen and (min-width: 769px){
   #card-row {
-    vertical-align: middle;
-    position: relative;
+    position: absolute;
     overflow: scroll;
-    height: 65%;
+    top: 235px;
+    left: 1%;
+    right: 1%;
+    bottom: 0;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
@@ -108,10 +112,12 @@
 
 @media only screen and (min-width: 1023px){
   #card-row {
-    vertical-align: middle;
-    position: relative;
+    position: absolute;
     overflow: scroll;
-    height: 75%;
+    top: 235px;
+    left: 1%;
+    right: 1%;
+    bottom: 0;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
@@ -123,10 +129,12 @@
 
 @media only screen and (min-width: 1200px){
   #card-row {
-    vertical-align: middle;
-    position: relative;
+    position: absolute;
     overflow: scroll;
-    height: 65%;
+    top: 235px;
+    left: 1%;
+    right: 1%;
+    bottom: 0;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
