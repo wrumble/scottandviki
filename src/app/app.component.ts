@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   openChurchMap() {
+    this.openDirectionsMap();
     var mapProp = {
           center: new google.maps.LatLng(51.020624, 0.2604413),
           zoom: 14,
@@ -57,14 +58,14 @@ export class AppComponent implements OnInit {
   }
 
   openDirectionsMap() {
-        var directionsDisplay = new google.maps.DirectionsRenderer();
-        var mapCenter = new google.maps.LatLng(51.0965176, 0.1021581);
-        var mapOptions =
-                {
-                    zoom: 11,
-                    center: mapCenter,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                };
+    var directionsDisplay = new google.maps.DirectionsRenderer();
+    var mapCenter = new google.maps.LatLng(51.0965176, 0.1021581);
+    var mapOptions =
+            {
+                zoom: 11,
+                center: mapCenter,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            };
     var map = new google.maps.Map(document.getElementById("directions-map"), mapOptions);
     let center = new google.maps.LatLng(51.0207156, 0.260662);
     directionsDisplay.setMap(map);
@@ -82,5 +83,12 @@ export class AppComponent implements OnInit {
         directionsDisplay.setDirections(response);
       }
     });
+  }
+
+  printMapModal() {
+    var content = window.document.getElementById("map-modal");
+    var newWindow = window.open();
+    newWindow.document.write(content.innerHTML);
+    newWindow.print();
   }
 }

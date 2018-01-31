@@ -31,7 +31,7 @@
       </div>
       <!-- Map Card -->
       <div class="col s12 m6">
-        <a href="#" onclick="$('#map-modal').modal('open');" role="button" (click)="openChurchMap(); openDirectionsMap()">
+        <a href="#" onclick="$('#map-modal').modal('open');" role="button" (click)="openChurchMap()">
           <div class="card">
             <div class="card-image">
               <img src="./assets/1.jpg" class="z-depth-4">
@@ -171,7 +171,7 @@
   </div>
   <div class="row">
     <div class="container center">
-      <a id="print-button" onClick="window.print()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a>
+      <a id="print-button" role="button" (click)="printMapModal()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a>
     </div>
   </div>
   <div class="modal-footer transparent">

@@ -65,7 +65,8 @@
     top: 147px;
     position: relative;
     overflow: scroll;
-    height: 65%;
+    bottom: 0;
+    height: 60%;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
@@ -80,7 +81,7 @@
     vertical-align: middle;
     position: relative;
     overflow: scroll;
-    height: 75%;
+    min-height: auto;
   }
   #card-title {
     font-family: "CallingAngelsPersonalUse";
@@ -173,7 +174,7 @@
   text-align: center;
 }
 
-#map {
+#church-map, #directions-map {
   width: 100vw;
   height: 400px;
   max-width: 100%;
@@ -233,16 +234,19 @@
   #overlay, #close-modal-button, #print-button * {
     display: none !important;
   }
+
   #map-modal * {
     visibility: visible;
+    position: absolute;
   }
-  #map-modal, #map-modal {
+
+  #map-modal {
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
     overflow: visible!important;
-    display: block;
+    display: block!important;
   }
 }
