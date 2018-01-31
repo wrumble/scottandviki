@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
   openChurchMap() {
     this.openDirectionsMap();
     var mapProp = {
-          center: new google.maps.LatLng(51.020624, 0.2604413),
-          zoom: 14,
+          center: new google.maps.LatLng(51.103976, 0.255515),
+          zoom: 11,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: true,
           mapTypeControlOptions: {
