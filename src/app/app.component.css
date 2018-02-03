@@ -140,6 +140,11 @@
         height: auto;
       }
 
+      #embedded-map {
+        width: 95%;
+        height: 400px;
+      }
+
       .modal {
         z-index: 1000;
         position: fixed;
