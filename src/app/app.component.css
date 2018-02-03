@@ -1,260 +1,189 @@
-#main-container {
-  overflow: hidden;
-  height: 100%;
-  width: 95%;
-}
+      #main-container {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+      }
 
-#title-text {
-  margin-top: 15px;
-  margin-bottom: 0px;
-  font-size: 80px;
-  color: black;
-  font-family: "CallingAngelsPersonalUse";
-  text-shadow: 4px 6px 12px #fff;
-}
+      #title-text {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-size: 80px;
+        color: black;
+        font-family: "CallingAngelsPersonalUse";
+        text-shadow: 4px 6px 12px #fff;
+      }
 
-#date-text {
-  margin-top: -20px;
-  margin-bottom: 0px;
-  font-size: 45px;
-  color: black;
-  font-family: "Strawberry_Whipped_Cream";
-  text-shadow: 2px 4px 6px #fff;
-}
+      #date-text {
+        margin-top: -20px;
+        margin-bottom: 0px;
+        font-size: 45px;
+        color: black;
+        font-family: "Strawberry_Whipped_Cream";
+        text-shadow: 2px 4px 6px #fff;
+      }
 
-#title-row {
-  margin-bottom: 40px;
-}
+      #title-row {
+        margin-bottom: 10px;
+      }
 
-#title-text-small {
-  background:inherit;
-  margin-top: 10px;
-  margin-bottom: -15px;
-  font-size: 12vw;
-  color: black;
-  font-family: "CallingAngelsPersonalUse";
-  text-shadow: 4px 6px 12px #fff;
-}
+      #title-text-small {
+        background:inherit;
+        margin-top: 10px;
+        margin-bottom: -15px;
+        font-size: 12vw;
+        color: black;
+        font-family: "CallingAngelsPersonalUse";
+        text-shadow: 4px 6px 12px #fff;
+      }
 
-#date-text-small {
-  background:inherit;
-  margin-top: 0px;
-  margin-bottom: -15px;
-  font-size: 10vw;
-  color: black;
-  font-family: "Strawberry_Whipped_Cream";
-  text-shadow: 2px 4px 6px #fff;
-}
+      #date-text-small {
+        background: inherit;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        font-size: 10vw;
+        color: black;
+        font-family: "Strawberry_Whipped_Cream";
+        text-shadow: 2px 4px 6px #fff;
+      }
 
-#title-row-small {
-  right: 0;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 20px;
-}
+      #title-row-small {
+        margin-bottom: 10px;
+      }
 
-#title-container-small {
-  background:inherit;
-  width: 100%;
-}
+      #title-container-small {
+        background:inherit;
+        width: 100%;
+      }
 
-@media screen and (max-width: 479px) {
-  #card-row {
-    top: 147px;
-    position: absolute;
-    overflow: scroll;
-    left: 1%;
-    right: 1%;
-    bottom: 0;
-  }
-  #card-title {
-    font-family: "CallingAngelsPersonalUse";
-    font-size: 30px;
-    left: -5px;
-    bottom: -20px;
-  }
-}
+      #card-row {
+        position: relative;
+        overflow: scroll;
+        top: 10px;
+        bottom: 0px;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 0px;
+      }
 
-@media screen and (max-width: 768px) {
-  #card-row {
-    position: absolute;
-    overflow: scroll;
-    top: 230px;
-    width: 100%;
-    bottom: 0;
-  }
-  #card-title {
-    font-family: "CallingAngelsPersonalUse";
-    font-size: 30px;
-    left: -5px;
-    bottom: -20px;
-  }
-}
+      #card-title {
+        font-family: "CallingAngelsPersonalUse";
+        font-size: 30px;
+        left: -5px;
+        bottom: -20px;
+      }
 
-@media only screen and (min-width: 769px){
-  #card-row {
-    position: absolute;
-    overflow: scroll;
-    top: 235px;
-    left: 1%;
-    right: 1%;
-    bottom: 0;
-  }
-  #card-title {
-    font-family: "CallingAngelsPersonalUse";
-    font-size: 30px;
-    left: 0px;
-    bottom: -20px;
-  }
-}
+      #modal-title {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: "CallingAngelsPersonalUse";
+        font-size: 28px;
+      }
 
-@media only screen and (min-width: 1023px){
-  #card-row {
-    position: absolute;
-    overflow: scroll;
-    top: 235px;
-    left: 1%;
-    right: 1%;
-    bottom: 0;
-  }
-  #card-title {
-    font-family: "CallingAngelsPersonalUse";
-    font-size: 30px;
-    left: 0px;
-    bottom: -20px;
-  }
-}
+      #modal-text {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: "DancingScript-Regular";
+        font-size: 25px;
+      }
 
-@media only screen and (min-width: 1200px){
-  #card-row {
-    position: absolute;
-    overflow: scroll;
-    top: 235px;
-    left: 1%;
-    right: 1%;
-    bottom: 0;
-  }
-  #card-title {
-    font-family: "CallingAngelsPersonalUse";
-    font-size: 30px;
-    left: -5px;
-    bottom: -20px;
-  }
-}
+      #small-card-title {
+        font-family: "CallingAngelsPersonalUse";
+        font-size: 30px;
+        left: 0px;
+        bottom: -20px;
+        color: black;
+      }
 
-#modal-title {
-  margin-top: 20px;
-  margin-left: 10px;
-  font-family: "CallingAngelsPersonalUse";
-  font-size: 28px;
-}
+      #button {
+        font-family: "DancingScript-Regular";
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: -15px;
+      }
 
-#modal-text {
-  margin-top: 10px;
-  margin-left: 10px;
-  font-family: "DancingScript-Regular";
-  font-size: 25px;
-}
+      #close-modal-button {
+        font-family: "DancingScript-Regular";
+        font-size: 25px;
+      }
 
-#small-card-title {
-  font-family: "CallingAngelsPersonalUse";
-  font-size: 30px;
-  left: 0px;
-  bottom: -20px;
-  color: black;
-}
+      .center {
+        text-align: center;
+      }
 
-#button {
-  font-family: "DancingScript-Regular";
-  font-size: 17px;
-  margin-top: 10px;
-  margin-bottom: -15px;
-}
+      #church-map, #directions-map {
+        width: 100vw;
+        height: 400px;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-#close-modal-button {
-  font-family: "DancingScript-Regular";
-  font-size: 25px;
-}
+      #map-modal {
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        min-height:  90%!important;
+        bottom: 10%;
+      }
 
-.center {
-  text-align: center;
-}
+      .overlay {
+        background: transparent;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        top: 300px;
+        margin-top: -300px;
+      }
 
-#church-map, #directions-map {
-  width: 100vw;
-  height: 400px;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
+      #map-image {
+        width: 100%;
+        height: auto;
+      }
 
-#map-modal {
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  min-height:  90%!important;
-  bottom: 10%;
-}
+      .modal {
+        z-index: 1000;
+        position: fixed;
+        left:0;
+        right:0;
+        max-height:auto;
+        height: auto;
+        width: 99%;
+        margin: auto;
+        background-image: url("/assets/petals1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: left top;
+      }
 
-.overlay {
-  background: transparent;
-  position: relative;
-  width: 100%;
-  height: 300px;
-  top: 300px;
-  margin-top: -300px;
-}
+      .modal-content {
+        height: auto;
+        padding:0;
+        overflow: auto;
+        padding: 10px;
+      }
 
-#map-image {
-  width: 100%;
-  height: auto;
-}
+      .modal-footer {
+        bottom: 0px;
+        overflow-y: scroll;
+      }
 
-.modal {
-  position: fixed;
-  left:0;
-  right:0;
-  max-height:auto;
-  height: auto;
-  width: 99%;
-  margin: auto;
-  background-image: url("/assets/petals1.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: left top;
-}
+      @media print {
+        #overlay, #close-modal-button, #print-button * {
+          display: none !important;
+        }
 
-.modal-content {
-  height: auto;
-  padding:0;
-  overflow: auto;
-  padding: 10px;
-}
+        #map-modal * {
+          visibility: visible;
+          position: absolute;
+        }
 
-.modal-footer {
-  bottom: 0px;
-  overflow-y: scroll;
-}
-
-@media print {
-  #overlay, #close-modal-button, #print-button * {
-    display: none !important;
-  }
-
-  #map-modal * {
-    visibility: visible;
-    position: absolute;
-  }
-
-  #map-modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    overflow: visible!important;
-    display: block!important;
-  }
-}
+        #map-modal {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 0;
+          padding: 0;
+          overflow: visible!important;
+          display: block!important;
+        }
+      }
