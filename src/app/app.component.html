@@ -35,7 +35,7 @@
           <div class="card">
             <div class="card-image">
               <img src="./assets/1.jpg" class="z-depth-4">
-              <span id="card-title" class="card-title">Map's and Directions</span>
+              <span id="card-title" class="card-title">Maps and Directions</span>
             </div>
           </div>
         </a>
@@ -57,7 +57,7 @@
           <div class="card">
             <div class="card-image">
               <img src="./assets/4.jpg" class="z-depth-4">
-              <span id="card-title" class="card-title">Hotels and Taxi's</span>
+              <span id="card-title" class="card-title">Hotels and Taxis</span>
             </div>
           </div>
         </a>
@@ -176,7 +176,7 @@
   </div>
   <div class="row">
     <div class="container center">
-      <a id="print-button" onClick="window.print()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a>
+      <!-- <a id="print-button" onClick="window.print()" class="black waves-effect waves-light btn z-depth-3" href=""><i class="material-icons right">print</i>Print this page</a> -->
     </div>
   </div>
   <div class="modal-footer transparent">
@@ -201,7 +201,7 @@
 <div id="hotel-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">A List of nearby Hotels and Taxis</h4>
-    <p id="modal-text">You may want to also check <a style="display: inline" href="https://www.airbnb.co.uk/s/TN20-6AB/homes?checkin=2018-06-22&checkout=2018-06-24&allow_override%5B%5D=&ne_lat=51.199611408763&ne_lng=0.5075977291901381&sw_lat=50.792793890757686&sw_lng=-0.034852221981736875&zoom=10&search_by_map=true&s_tag=riXVzlwQ" target="_blank">Airbnb</a> if you can’t find what you’re looking for.</p>
+    <p id="modal-text">You may want to also check <a style="display: inline" href="https://www.airbnb.co.uk/s/TN20-6AB/homes?checkin=2018-06-22&checkout=2018-06-24&allow_override%5B%5D=&ne_lat=51.199611408763&ne_lng=0.5075977291901381&sw_lat=50.792793890757686&sw_lng=-0.034852221981736875&zoom=10&search_by_map=true&s_tag=riXVzlwQ" target="_blank">Airbnb</a> if you can’t find what you are looking for.</p>
   </div>
   <p id="modal-text">Hotels</p>
   <div class="row">
@@ -211,7 +211,7 @@
       <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d40033.043196563!2d0.28670940107421833!3d51.16258737622527!3m2!1i1024!2i768!4f13.1!2m1!1shotels!5e0!3m2!1sen!2suk!4v1517664587386" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-  <p id="modal-text">Taxi's</p>
+  <p id="modal-text">Taxis</p>
   <div class="row">
     <div class="overlay" onClick="style.pointerEvents='none'">
     </div>
@@ -237,7 +237,7 @@
 <div id="camping-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div class="modal-content">
     <h4 id="modal-title">Fancy Camping on the farm</h4>
-    <p id="modal-text">You are welcome to camp on the farm to save travelling to a hotel.Closer to the time we will mark out where to camp depending on weather conditions in the lead up!</p>
+    <p id="modal-text">You are welcome to camp on the farm to save travelling to a hotel. Closer to the time we will mark out where to camp depending on weather conditions in the lead up!</p>
   </div>
   <div class="modal-footer transparent">
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
