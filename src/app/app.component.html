@@ -134,6 +134,8 @@
     <a id="close-modal-button" class="right transparent btn-flat" (click)="closeModal()">Close</a>
   </div>
 </div>
+
+<!-- Map Modal -->
 <div id="map-modal" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
   <div id="map-modal-content" class="modal-content">
     <h4 id="modal-title">Map of the area and directions</h4>
@@ -141,9 +143,7 @@
       <div class="row">
         <div id="overlay" class="overlay" onClick="style.pointerEvents='none'">
         </div>
-        <div id="church-map">
-
-        </div>
+        <div id="church-map"></div>
       </div>
       <hr>
       <p id="modal-text"><b>St Dunstan’s Church, Mayfield TN20 6AB</b><br>Mayfield village is signposted on the A267 and the church is situated in the middle of the village on the High Street.</p>
@@ -161,9 +161,7 @@
       <div class="row">
         <div class="overlay" onClick="style.pointerEvents='none'">
         </div>
-        <div id="directions-map">
-
-        </div>
+        <div id="directions-map"></div>
       </div>
       <div class="row">
         <div class="container center">
