@@ -31,7 +31,7 @@
       </div>
       <!-- Map Card -->
       <div class="col s12 m6">
-        <a href="#" onclick="$('#map-modal').modal('open');" role="button" (click)="openChurchMap()">
+        <a href="#" onclick="$('#map-modal').modal('open');">
           <div class="card">
             <div class="card-image">
               <img src="./assets/1.jpg" class="z-depth-4">
@@ -141,9 +141,7 @@
     <h4 id="modal-title">Map of the area and directions</h4>
     <div class="container center">
       <div class="row">
-        <div id="overlay" class="overlay" onClick="style.pointerEvents='none'">
-        </div>
-        <div id="church-map"></div>
+        <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5019.511075161662!2d0.25637865214137245!3d51.020664972781894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df420e7a116711%3A0xb8b660baa619fb12!2sSt+Dunstan&#39;s+Church!5e0!3m2!1sen!2suk!4v1518955475368" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <hr>
       <p id="modal-text"><b>St Dunstan’s Church, Mayfield TN20 6AB</b><br>Mayfield village is signposted on the A267 and the church is situated in the middle of the village on the High Street.</p>
@@ -159,9 +157,7 @@
       <p id="modal-text">The drive from St Dunstan’s Church to the reception at Juddwood Farm is approximately 30 minutes.</p>
       <p id="modal-text"><b>Juddwood Farm, Haysden Lane, Tonbridge TN11 8AB </b></p>
       <div class="row">
-        <div class="overlay" onClick="style.pointerEvents='none'">
-        </div>
-        <div id="directions-map"></div>
+        <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d91308.85526172571!2d0.14559617168145927!3d51.09653155899818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47df420e7a116711%3A0xb8b660baa619fb12!2sSt+Dunstan&#39;s+Church%2C+High+Street%2C+Mayfield!3m2!1d51.0206245!2d0.2605629!4m5!1s0x47df457b405bc013%3A0x3cc7ffbbe032290f!2sJudd+Wood+Farm%2C+Haysden+Ln%2C+Tonbridge+TN11!3m2!1d51.1728154!2d0.22197139999999999!5e0!3m2!1sen!2suk!4v1518954233291" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="row">
         <div class="container center">
