@@ -174,22 +174,18 @@
       }
 
       @media print {
-        #overlay, #close-modal-button, #print-button * {
+        #close-modal-button, #print-button * {
           display: none !important;
         }
 
-        #map-modal * {
+        #map-modal, #map-modal * {
           visibility: visible;
-          position: absolute;
         }
 
         #map-modal {
           position: absolute;
           top: 0;
           left: 0;
-          margin: 0;
-          padding: 0;
           overflow: visible!important;
-          display: block!important;
         }
       }
