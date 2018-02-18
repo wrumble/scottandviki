@@ -18,10 +18,7 @@ export class AppComponent {
 
   modalActions = new EventEmitter<string|MaterializeAction>();
 
-  printMapModal() {
-    var content = window.document.getElementById("map-modal");
-    var newWindow = window.open();
-    newWindow.document.write(content.innerHTML);
-    newWindow.print();
+  closeModal() {
+    this.modalActions.emit({action:"modal",params:['close']});
   }
 }
